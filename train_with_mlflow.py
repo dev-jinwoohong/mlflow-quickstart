@@ -170,7 +170,7 @@ def main():
 
             if val_acc > best_acc:
                 best_acc = val_acc
-                mlflow.pytorch.log_model(model, "best_model", signature)
+                mlflow.pytorch.log_model(model, "best_model", signature=signature)
                 torch.save(model.state_dict(), os.path.join(opt.save_dir, 'best_model.pth'))
 
     # Model 로드
