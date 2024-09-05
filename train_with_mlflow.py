@@ -174,7 +174,7 @@ def main():
                 torch.save(model.state_dict(), os.path.join(opt.save_dir, 'best_model.pth'))
 
     # Model 로드
-    logged_model = f"runs:/{run.info.run_id}/model"
+    logged_model = f"runs:/{run.info.run_id}/best_model"
     loaded_model = mlflow.pyfunc.load_model(logged_model)
     loaded_model.predict(np.random.uniform(size=[1, 3, 28, 28]).astype(np.float32))
 
