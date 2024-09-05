@@ -17,6 +17,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 mlflow.set_tracking_uri(uri="")
+# mlflow.set_tracking_uri(uri="sqlite:///mlruns.db")
 
 mlflow.set_experiment("Learning Fashion MNIST Dataset with Resnet")
 
