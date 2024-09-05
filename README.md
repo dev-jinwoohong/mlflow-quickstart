@@ -1,5 +1,7 @@
 # mlflow-quickstart
 
+![image](https://github.com/user-attachments/assets/ea1f70db-845f-4e9b-b49e-bc5ec05e7282)
+
 ## Introduce
 MLflow의 전반적인 기능을 실습. MLflow 공식 문서를 참조하여 작성하였다.
 
